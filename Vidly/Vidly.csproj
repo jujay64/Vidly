@@ -239,9 +239,26 @@
     <Compile Include="Migrations\201701291844230_AddBirthdayToCustomer.Designer.cs">
       <DependentUpon>201701291844230_AddBirthdayToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701291900370_AddMoviesDbSetInDbContext.cs" />
+    <Compile Include="Migrations\201701291900370_AddMoviesDbSetInDbContext.Designer.cs">
+      <DependentUpon>201701291900370_AddMoviesDbSetInDbContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701291909288_AddMoviePropertiesAndGenre.cs" />
+    <Compile Include="Migrations\201701291909288_AddMoviePropertiesAndGenre.Designer.cs">
+      <DependentUpon>201701291909288_AddMoviePropertiesAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701291911391_AddGenrePropertiesAnnotations.cs" />
+    <Compile Include="Migrations\201701291911391_AddGenrePropertiesAnnotations.Designer.cs">
+      <DependentUpon>201701291911391_AddGenrePropertiesAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701291912228_PopulateGenresInDatabase.cs" />
+    <Compile Include="Migrations\201701291912228_PopulateGenresInDatabase.Designer.cs">
+      <DependentUpon>201701291912228_PopulateGenresInDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -315,6 +332,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -354,6 +372,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701291844230_AddBirthdayToCustomer.resx">
       <DependentUpon>201701291844230_AddBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701291900370_AddMoviesDbSetInDbContext.resx">
+      <DependentUpon>201701291900370_AddMoviesDbSetInDbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701291909288_AddMoviePropertiesAndGenre.resx">
+      <DependentUpon>201701291909288_AddMoviePropertiesAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701291911391_AddGenrePropertiesAnnotations.resx">
+      <DependentUpon>201701291911391_AddGenrePropertiesAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701291912228_PopulateGenresInDatabase.resx">
+      <DependentUpon>201701291912228_PopulateGenresInDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
