@@ -4,6 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2>Customers</h2>
+<div>
+    @Html.ActionLink("NEW CUSTOMER", "New", "Customers", null, new { @class = "btn btn-primary" })
+</div>
 
 @if (!Model.Any())
 {
@@ -22,7 +25,7 @@ else
             @foreach (var customer in Model)
             {
         <tr>
-            <td>@Html.ActionLink(customer.Name, "Details", "Customers", new {id=customer.Id},null)</td>
+            <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new {id=customer.Id},null)</td>
             <td>@customer.MembershipType.Name</td>
         </tr>
             }
