@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using WebGrease;
 
 namespace Vidly.Models
 {
@@ -16,6 +17,7 @@ namespace Vidly.Models
 
         public Genre Genre { get; set; }
 
+        [Required]
         [Display(Name="Genre")]
         public byte GenreId { get; set; }
 
@@ -26,6 +28,7 @@ namespace Vidly.Models
         public DateTime AddedToDatabaseDate { get; set; }
 
         [Required]
+        [Range(1,20)]
         [Display(Name="Number in Stock")]
         public int Stock { get; set; }
 
