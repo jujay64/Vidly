@@ -1,15 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Vidly.Models
-{
-    public class ExternalLoginConfirmationViewModel
-    {
-        [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
-    }
-
+namespace Vidly.ViewModels
+{  
     public class ExternalLoginListViewModel
     {
         public string ReturnUrl { get; set; }
@@ -56,6 +49,7 @@ namespace Vidly.Models
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
+
         public string Password { get; set; }
 
         [Display(Name = "Remember me?")]
@@ -64,6 +58,14 @@ namespace Vidly.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
+
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
