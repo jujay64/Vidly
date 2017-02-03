@@ -73,6 +73,7 @@ namespace Vidly.Controllers
             if (movie.Id == 0)//New
             {
                 movie.AddedToDatabaseDate = DateTime.Now;
+                movie.StockAvailable = movie.Stock;
                 _context.Movies.Add(movie);
             }
             else//Edit
